@@ -1,0 +1,13 @@
+/*documento CSS que é importado na parte de style dentro do arquivo html*/
+
+body{
+    background-color: #080025;
+    color: #fefdf2;
+}
+p{
+    color: #fefdf2;
+}
+table, th, td{
+    border: 1px solid #fefdf2;
+    padding: 10px;
+}

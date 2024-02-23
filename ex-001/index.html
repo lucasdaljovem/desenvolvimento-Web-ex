@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Atividade 1</title>  <!-- titulo lá em cima --> 
+        <style>
+            @import url("estilo1.css"); /*importa o arquivo css*/
+        </style>
+    
+    </head>
+
+
+    <body>
+        <h1>Exercicio de HTML e CSS</h1>
+        
+        <a 
+        href="https://techgeekbuzz.com/media/new_post_images/HTML_vs_JavaScript.webp" target="_blank"> <!-- link da imagem --> 
+        <img src="imagem.png" style="width:300px">  <!-- nome do arquivo da imagem que está na mesma pasta do arquivo--> 
+        </a>  
+        
+        <table> <!-- cria uma tabela-->
+            <tr> <!--tr = table row-->
+                <th>Questão 1</th> <!-- th = table header, que é o cabeçalho-->
+                <th>Questão 2</th>
+            </tr>
+
+            <tr>
+                <td>Coloque o seu nome</td>
+                <td>Escolha 1 alternativa</td>
+            </tr>
+
+            <tr>
+                <td>E o sobrenome</td>
+                <td>Dica: inicia com H</td>
+            </tr>
+            
+        </table>
+        <p> 
+            responda as perguntas a seguir sobre a aula de hoje:
+        </p>
+        <form action="">  <!-- checkbox,inpout box e textos --> 
+            <label for="fname"> Nome:</label> <br> 
+            <input type="text" id="fname" value=""> <br><br>
+            <label for="fUC">Qual o conteúdo da aula de hoje?</label> <br> <br>
+            <input type="radio" id="html" name="fav_language" value="HTML">
+            <label for="html">HTML </label><br>
+            <input type="radio" id="java" name="fav_language" value="JAVA">
+            <label for= java>JAVA</label> <br>
+            <br><br>
+            <input type="submit" value="Submit" style="width:100px">
+        </form>
+
+        
+    </body>
+    
+</html>
