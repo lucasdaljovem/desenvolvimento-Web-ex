@@ -1,3 +1,65 @@
 *{
-    background-color: #1D2A35;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
 }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color:white;
+
+}
+
+.container{
+    box-sizing: border-box;
+    background-color: #1D2A35;
+    border: 1px solid black;
+    color: #DDDDDD;
+
+    width: 550px; 
+    height: 650px;
+    padding: 20px; /*fornece o espaço interno para o conteúdo*/
+    
+    
+    /* justify-content: center; /*alinha no eixo horizontal*
+    align-items: center; /*alinha no eixo vertical*
+    display: flex; */
+}
+
+#tela{
+    box-sizing: border-box;
+    width: 500px; 
+    height: 50px;
+    border: 3px solid #38444D;  
+        border-radius: 3px;  
+        padding: 20px;  
+        margin: auto;
+        
+}
+
+
+/*realiza a separação e distribuuição entre os botões*/
+.botoes{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+
+
+}
+
+button{
+    padding-block-start: 1rem;
+    padding-block-end: 1rem;
+    padding-inline-end: 1.25rem;
+    padding-inline-start: 1.25rem;
+    border-radius: 12px;
+    font-size: 20px;
+    color: #DDDDDD;
+    background-color: #38444D;
+
+}
+
