@@ -5,18 +5,19 @@
 }
 
 .container{
-    display: flex;
     max-width: 1080px;
     margin: 0 auto; 
+    display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+
 }
 
 body{
     height: 100vh; /*deixa a altura igual a altura do view */
     background-color: #F5F0EA;
     color: #120D09;
-    box-sizing: border-box; /*cria uma caixa para que o conteúdo não saia da borda da tela*/
+    box-sizing: border-box; /*cria uma caixa para que o conteúdo não saia da borda da*/
 }
 
 header{
@@ -34,8 +35,9 @@ header{
 
 }
 
-.logo, .redes {
-    width: 25%;
+.logo, .redes{
+    width: 40px;
+    height: 40px;
     
 }
 
@@ -91,4 +93,14 @@ a{
     display: center;
 
 
+}
+
+.img_text{
+    justify-content: flex-start;
+    width: 300px;
+    gap: 30px;
+}
+
+h1{
+    width: fit-content;
 }

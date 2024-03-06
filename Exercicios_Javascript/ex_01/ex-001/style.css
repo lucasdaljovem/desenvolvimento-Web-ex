@@ -23,7 +23,7 @@ body{
     width: 550px; 
     height: 650px;
     padding: 20px; /*fornece o espaço interno para o conteúdo*/
-    
+    /* position: relative; */
     
     /* justify-content: center; /*alinha no eixo horizontal*
     align-items: center; /*alinha no eixo vertical*
@@ -47,9 +47,14 @@ body{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 5px;
-
+    /* position: absolute;
+    bottom: 0; */
 
 }
+
+/* #botao_igual{
+    grid-column: 23 / 24;
+} */
 
 button{
     padding-block-start: 1rem;
@@ -63,3 +68,15 @@ button{
 
 }
 
+button:hover{
+    background-color: #4b5c68;
+}
+
+#clear{
+    background-color: rgb(156, 20, 20);
+}
+
+#clear:hover{
+    background-color: rgb(182, 24, 24);
+
+}
