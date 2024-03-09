@@ -16,3 +16,25 @@ function resolver(){
 
     return y
 }
+
+//função para limpar a tela ao apertar o CE
+function limparTela(){
+    document.getElementById('tela').value = ""
+}   
+
+
+// const switcher = document.querySelector('.theme_button');
+
+// switcher.addEventListener('acionado', function () {
+//     document.body.classList.toggle('dark_theme')
+
+//     var className = document.body.className;
+//     if(className == "light_them") {
+//         this.textContent = "Dark";
+//     }
+//     else{
+//         this.textContent = "Light";
+//     }
+
+//     // console.log('current class name: ' +className);
+// });

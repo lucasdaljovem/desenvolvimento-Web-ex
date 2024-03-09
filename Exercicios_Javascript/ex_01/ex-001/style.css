@@ -1,3 +1,35 @@
+/*cria variaveis, onde ficarão armazenadas as cores da pagina, facilitando para modificar elas*/
+:root{
+    /*Dark theme mode colors*/
+    --cor-background-dark: rgb(89, 89, 115);
+    --cor-container-dark: #1D2A35;
+    --cor-textos-dark: #DDDDDD;
+
+    --cor-botao_borda-dark: #38444D;
+    --cor-botao_hover-dark: #4b5c68;
+
+    --cor-botao_clear-dark: #62816b; 
+    --cor-botao_clear_hover-dark: #709279;
+
+
+    /*Light theme mode colors*/
+    --cor-background-light: rgb(89, 89, 115);
+    --cor-container-light: #1D2A35;
+    --cor-textos-light: #DDDDDD;
+
+    --cor-botao_borda-light: #38444D;
+    --cor-botao_hover-light: #4b5c68;
+
+    --cor-botao_clear-light: #62816b; 
+    --cor-botao_clear_hover-light: #709279;
+
+}
+
+.theme_button{
+
+}
+
+
 *{
     margin: 0;
     padding: 0;
@@ -10,19 +42,19 @@ body{
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color:white;
+    background-color: var(--cor-background);
 
 }
 
 .container{
     box-sizing: border-box;
-    background-color: #1D2A35;
-    border: 1px solid black;
-    color: #DDDDDD;
-
-    width: 550px; 
-    height: 650px;
-    padding: 20px; /*fornece o espaço interno para o conteúdo*/
+    background-color: var(--cor-container);
+    border: 1px solid var(--cor-botao_borda);
+    color: var(--cor-textos);
+ 
+    width: 35.5rem; 
+    height: 40.6rem;
+    padding: 1.25rem; /*fornece o espaço interno para o conteúdo*/
     /* position: relative; */
     
     /* justify-content: center; /*alinha no eixo horizontal*
@@ -30,13 +62,23 @@ body{
     display: flex; */
 }
 
+.cabecalho{
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.titulo{
+    font-size: 2rem;
+    padding: 0%;
+}
+
 #tela{
     box-sizing: border-box;
-    width: 500px; 
-    height: 50px;
-    border: 3px solid #38444D;  
+    width: 31.25rem; 
+    height: 3.2px;
+    border: 3px solid var(--cor-botao_borda);  
         border-radius: 3px;  
-        padding: 20px;  
+        padding: 1.25rem;  
         margin: auto;
         
 }
@@ -62,21 +104,45 @@ button{
     padding-inline-end: 1.25rem;
     padding-inline-start: 1.25rem;
     border-radius: 12px;
-    font-size: 20px;
-    color: #DDDDDD;
-    background-color: #38444D;
+    font-size: 1.25rem;
+    color: var(--cor-textos);
+    background-color: var(--cor-botao_borda);
 
 }
 
 button:hover{
-    background-color: #4b5c68;
+    background-color: var(--cor-botao_hover);
 }
 
 #clear{
-    background-color: rgb(156, 20, 20);
+    background-color: var(--cor-botao_clear);
 }
 
 #clear:hover{
-    background-color: rgb(182, 24, 24);
+    background-color: var(--cor-botao_clear_hover);
 
+}
+
+.dark_theme{
+    --background_color: var(--cor-background-dark);
+    --font_color: var(--cor-textos-dark);
+    --container_color: var(--cor-container-dark);
+    --borda-botao_color: var(--cor-botao_borda-dark);
+    --botao_color_hover: var(--cor-botao_hover-dark);
+    --borda-botao-color-clear: var(--cor-botao_clear-dark);
+    --botao_color_hover_clear: var(var(--cor-botao_clear_hover-dark));
+}
+
+.light_theme{
+    --background_color: var(--cor-background-light);
+    --font_color: var(--cor-textos-light);
+    --container_color: var(--cor-container-light);
+    --borda-botao_color: var(--cor-botao_borda-light);
+    --botao_color_hover: var(--cor-botao_hover-light);
+    --borda-botao-color-clear: var(--cor-botao_clear-light);
+    --botao_color_hover_clear: var(--cor-botao_clear_hover-light);
+}
+
+.theme_button{
+    
 }

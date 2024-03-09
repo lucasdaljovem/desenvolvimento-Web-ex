@@ -5,19 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style> @import url("style.css"); /*importa o arquivo css*/ </style>
     <script src="script.js"></script> <!-- impora o arquivo javascript-->
-    
     <title>Calculadora</title>
-    
+    <link rel="shortcut icon" href="imagens/icons8-calculadora-64.ico" type="image/x-icon"> <!-- cria a imagem de icone na parte de cima da pagina-->
+
 
 </head>
 
-<body>
+<body class="dark_theme">
     
     <main>
         <div class="container">
+            <div class="cabecalho">
+            <p class="titulo">Calculadora </p>
+            <button class="theme_button"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAADxUlEQVR4nOVYSY8NURgt44IOwVJChERjyVJowwIbog2JBTFbYoXwAwwLw08gbNiiaXltSEi67CpN1z3nvu5OOs+wkrYvOfp7SXXpN1TXe7rDTW5e1X3fPd+p795vuDcI/qfmnOtSD2ZqA9BH8t20KI/jeHWSJHNq/e+c6yIZq9ezojCE1XKCJC8A+BDH8fpa1nPOHVWvZUXn3BoArwGcbwfBEyQdyW8kL5dKpblZ68k66lkrSlZzbK4wTrSDYDfJJyRXAHhOMgRwjWSJ5BjJIynZIzZWMpnQ5qwwjO6WEwSwg2SvnpMkmWUWve2c2zU6OrogK68x/ScZyWqOke8VVjsIbpIliuKQ/AhgY9DKZha7C+BFUSwAL4RVtWiuNjQ0tEreasunPbdTXwvgnjyY5OK0fBRF851zh0k+BPAZwE/rnzXmvT8kmfQcYQjLMDdKh+mSzgviUJOgPBDAe/M0beZeLav9TiBnoDSLnPLer61UKgvVy+Vyp/f+NICX4yLYnyWZxgbwWDqlu16s/d2kiORXeVydj7gFYNB7v6X+mvzG26qwA+BmkiSzJ5Mx7/7unNvQCK864ZK+bLJ9YuReDw8PL2kKLAiCkZGRpQDekLxRQ98z6WwWrxpY+7MBVcsqy+UhlyapZXTO7ZskAYTpwN9UA3BVMaz6rs2u/eSc2xZMsXnvtwLwaceRDgXz3GDKAgq01Xd5ayvCDMle7/3B6juAPdKVC8Ry61g6Q5B8RPJkUYIAzgB4UH2X10tXU3WkhKymi9O51YDltWuLEiyXy52Kk+kxy92xVUR/EiW5WTFL+0NfONmG1VdGUdRRlGAURR3Cyo4rBGnpLci/UwCfFoJxHC8i+SMXwb+8xOtyL3GTTqLcerooQQDnANyvvktH006SAepLhxklfm2DogRJviJ5IKVnd+4wYxOvpQN1GIbzLKFvnyo5N74yLByoLdWF2VSnqkR7RWkrL7mBgYFllon2ZjCP5051JK/UKRZuKvHnITkwTu4tyes19D3VoarpQNqg3JqtqsQS/7ZGeNoSspzI1Sq3BgcHlwP40rDcShesKiKt4Aztd0LBqqqE44WtCs4zCh+Kk+o6OwM4aw7hssuaLVitOG5csDYo+d8ryKblwzCcZ8H1AYBPdtQc07PG5K2SaVnJ3+DQdAdAT1CwAeiZ8qGpiWNnf1Eckv3CCqb74F6pVBZaEL6jMu1vHNz3Z64+ZIk8Vx893vuVdoLrbvfl0aWZeHl0UZ6scFLv+g3AsUbXb/LW/+8Cc8ZfAf8Tl+hBG9ovRdRtykLZoawAAAAASUVORK5CYII="> </button>
+            <!-- <button><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABH0lEQVR4nO3VTytEURgH4CeUEgtLhuzkY1iaBQvJF2CF1BSfwkrsKCv2UnwUWVj4t5ZRFmJGp46SzMy9457bLOat3+7ennvf3nNe+tWDNYnxMsEKTnGLobLQVdTRxF5ZaA2NiIYslPWnjR9oM7Y8aU3g+RcaMpwaPvsDDRlLfWTeW8CzKeHdFmjy4bpsAx+khO/awPcYTAW/tYFD1lLB9Q7wY6rpvukAN+McFN7yqwxwyD4GioS3MsIh50W2fRofOfAnrBfV+uMc8HcecIgq5jCKEcxgEfNZ4EqG6c6Tl7h4MlU1Z8tbJazWlbwt38bnP9Dw7oYua6nLtod9vqyAVXmUsfXhmZN4OgqrKWzGm+sar/FuD8vjAjvxI/vVW/UFABDWXHcFkVQAAAAASUVORK5CYII="></button>  -->
 
-            <h1>Calculadora</h1>
+        </div>
+            <div class="display">
+                <div class="input">
 
+                </div>
+                <input type="text" id="tela" name="resultado"> <!-- Display que mostra os resultados dos botões clicados através da função Display-->
+
+
+            </div>
             <!-- mostra o botão pressionado pelo usuário-->
             <input type="text" id="tela" name="resultado"> <!-- Display que mostra os resultados dos botões clicados através da função Display-->
 

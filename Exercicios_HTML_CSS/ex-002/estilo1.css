@@ -104,3 +104,18 @@ a{
 h1{
     width: fit-content;
 }
+
+
+
+
+
+/*
+Quando a tela é até um tamanho, vai ser uma definição de configuração, e abaixo ou acima, outra config
+alterando tamanho e qualidade das imagens, fontes, espaçamento e etc
+
+o nomero dentro do media a pessoa escolhem
+*/
+
+@media (max-width: 1200px){
+    
+}
